@@ -103,3 +103,19 @@ long int _strlen(char *p)
 		i++;
 	return (i);
 }
+/**
+ * args_nval - takes the next value of argument
+ *@p: pointer
+ * Return: 0 on success, -1 on error
+ */
+int args_nval(char **p)
+{
+	int index = 0;
+
+	while (p[index] != NULL)
+	{
+		p[index] = p[index + 1];
+		index++;
+	}
+	return (0);
+}
