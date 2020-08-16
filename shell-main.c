@@ -55,3 +55,24 @@ void intHandler(int i __attribute__((unused)))
 	write(STDOUT_FILENO, "\n", 1);
 	fflush(stdout);
 }
+/**
+ * *getpath - gets the path
+ *@env: environment var pointer
+ * Return: space
+ */
+char *getpath(char **env)
+{
+	char *tmp;
+
+	while (*env != NULL)
+	{
+		tmp = strtok(*env, "=");
+		if (_strcmp(tmp, "PATH") == 0)
+		{
+			tmp = strtok(NULL, "\0");
+			return (tmp);
+		}
+		env++;
+	}
+	return ("");
+}
