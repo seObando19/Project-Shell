@@ -91,3 +91,52 @@ void _error(void)
 	 _strlen("/: No such file or directory"));
 	write(STDERR_FILENO, "\n", _strlen("\n"));
 }
+/**
+ * pid_launch - make a fork to create child process who execute the command
+ *@args: arguments
+ *@_path: path
+ *@_argv: argument container
+ * Return: exit status
+ */
+int pid_launch(char **_argv, char *args, char **_path)
+{
+	pid_t pid;
+	char *envp[] = {"", NULL}, *dir = NULL, *file = NULL, *fullpath = NULL;
+	int status, j = 0, searchpath = 1, accessfile = 0;
+	struct stat fileStat;
+
+	pid = fork();
+	if (pid == 0)
+	{file =  _argv[0];
+		while (*(_path + j) != NULL && searchpath == 1)
+		{searchpath = appenddir(file);
+			dir = str_concat(NULL, *(_path + j));
+			dir = strdup(*(_path + j));
+			fullpath = searchpath == 1 ? str_concat(dir, file) : file;
+			if (stat(fullpath, &fileStat) == 0)
+			{accessfile = 1;
+				searchpath = 0; }
+			j++;
+			free(dir); }
+		if (accessfile)
+		{
+			if (execve(fullpath, _argv, envp) == -1)
+			{_error();
+				free(args);
+				free(_argv);
+				exit(-1); } }
+		else
+		{free(args);
+			free(_argv);
+			_error();
+			exit(2); }
+	}
+	else if (pid < 0)
+	{free(args);
+		free(_path);
+		free(_argv);
+		exit(102); }
+	else
+		waitpid(pid, &status, 0);
+	return (WEXITSTATUS(status) & 255);
+}
