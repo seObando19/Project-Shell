@@ -46,3 +46,12 @@ int main(int argc, char **argv, char **env)
 	}
 	return (status_pid);
 }
+/**
+ * intHandler - signal handler
+ *@i: variable integer
+ */
+void intHandler(int i __attribute__((unused)))
+{
+	write(STDOUT_FILENO, "\n", 1);
+	fflush(stdout);
+}
