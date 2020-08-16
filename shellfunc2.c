@@ -90,3 +90,16 @@ char *_strcat(char *dest, char *src)
 	dest[i + i2] = src[i2];
 	return (dest);
 }
+/**
+ * _strlen - returns length of a string.
+ *@p: pointer
+ * Return: length
+ */
+long int _strlen(char *p)
+{
+	long int i = 0;
+
+	while (p[i] != '\0')
+		i++;
+	return (i);
+}
