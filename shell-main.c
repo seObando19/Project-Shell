@@ -76,3 +76,28 @@ char *getpath(char **env)
 	}
 	return ("");
 }
+/**
+ * **setpathparams - sets the path parameters
+ *@path: the path of the shell
+ * Return: params
+ */
+char **setpathparams(char *path)
+{
+	int i = 0;
+	char *p;
+	int limitparams = 255;
+	char **params;
+
+	params = malloc(sizeof(char *) * limitparams);
+	if (params == NULL)
+		exit(114);
+	p = strtok(path, ":");
+	params[i] = p;
+	while (p != NULL)
+	{
+		i++;
+		p = strtok(NULL, ":");
+		params[i] = p;
+	}
+	return (params);
+}
