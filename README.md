@@ -4,19 +4,24 @@
  <br>
 
 ## Description
-In this project, we created our printf function in C and allow the next formats:
+In this project, we create our simple shell in C which is a terminal application which allows us to interact with the computer. The shell allows us through a terminal for the user to communicate with the computer through commands which carry out an execution where the shell reads them and, according to these, makes system calls and finally displays the results according to the process that has been carried out.
 
 For more imformation:
 
-- 1. [man page](./man_3_printf)
+- 1. [man page](./man_1_simple_shell)
 - 2. [HolbertonSchool](http://www.holbertonschool.com)
 
 ---
-### :file_folder: Files / Directories
+## Directories
 
 ##|File|Description
 ---|---|---
 1|[README.md](./README.md)|...
+2|[man_1_simple_shell](./man_1_simple_shell)|...
+3|[shell-main](./shell-main.c)|...
+4|[shellfunc1](./shellfunc1.c)|...
+5|[shellfunc2](./shellfunc2.c)|...
+6|[shellfunc3](./shellfunc3.c)|...
 ---
 <p align="center">
     <h2 align="center">Made by, Hector Orozco and Sebastian Obando</h2>
