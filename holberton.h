@@ -13,6 +13,7 @@
 #include <signal.h>
 #include <assert.h>
 #include <errno.h>
+#include <wait.h>
 #define SIZEBUFFER 1024
 
 char *str_concat(char *s1, char *s2);
