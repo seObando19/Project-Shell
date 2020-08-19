@@ -43,7 +43,7 @@ int get_simple_args(int argc, char **argv, char *args, char **_path, char **ev)
 	char **options;
 	char *argx;
 	int j = 0;
-	int args_max = 255, status_pid = 0;
+	int args_max = 1024, status_pid = 0;
 	(void)_path;
 
 	if (argc == 1)
