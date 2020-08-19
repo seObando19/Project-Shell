@@ -25,7 +25,7 @@ int listenread(char *buffer)
 	if (c == EOF)
 		return (-1);
 	else if (_strcmp(buffer, "exit") == 10)
-		return (EXIT_FAILURE);
+		return (-1);
 	return (0);
 }
 /**
