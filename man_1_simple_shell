@@ -52,7 +52,7 @@ No options currently exist for this hsh or simple_shell command. However, there 
 This is a project we made to learn about the inner workings of a Unix shell. Many computer science concepts were practiced as we built this. Other non-technical skills were practiced like remote working, communicating over different time zones, and peer programming.
 
 .SH BUGS
-So far no known bugs. If any are found or encountered, please submit the process of what you were doing before the crash to 1869@holbertonschool.com. 
+So far no known bugs. If any are found or encountered, please submit the process of what you were doing before the crash to 1869@holbertonschool.com.
 
 .SH PARAMETERS
 As many as you want, follow the synopsis format above.
