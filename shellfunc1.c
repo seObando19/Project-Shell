@@ -85,11 +85,12 @@ int get_simple_args(int argc, char **argv, char *args, char **_path, char **ev)
  */
 void _error(void)
 {
-	/*write(STDERR_FILENO, __FILE__, _strlen(__FILE__));*/ 
-	write(STDERR_FILENO, "sh", 2);
+	write(STDERR_FILENO, __FILE__, _strlen(__FILE__));
+	write(STDERR_FILENO, ": ", 2);
 	write(STDERR_FILENO, ": No such file or directory",
 	 _strlen("/: No such file or directory"));
-	write(STDERR_FILENO, "\n", _strlen("\n"));
+	/* write(STDERR_FILENO, "\n", _strlen("\n"));*/
+
 }
 /**
  * pid_launch - make a fork to create child process who execute the command
