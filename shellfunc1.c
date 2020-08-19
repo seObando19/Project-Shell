@@ -25,7 +25,7 @@ int listenread(char *buffer)
 	if (c == EOF)
 		return (-1);
 	else if (_strcmp(buffer, "exit") == 10)
-		return (-1);
+		return (EXIT_FAILURE);
 	return (0);
 }
 /**
@@ -125,7 +125,7 @@ int pid_launch(char **_argv, char *args, char **_path)
 			{_error();
 				free(args);
 				free(_argv);
-				exit(-1); } }
+				exit(EXIT_FAILURE); } }
 		else
 		{free(args);
 			free(_argv);
