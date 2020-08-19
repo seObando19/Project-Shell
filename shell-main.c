@@ -87,7 +87,7 @@ char **setpathparams(char *path)
 {
 	int i = 0;
 	char *p;
-	int limitparams = 1024;
+	int limitparams = 512;
 	char **params;
 
 	params = malloc(sizeof(char *) * limitparams);
