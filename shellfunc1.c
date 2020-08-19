@@ -139,5 +139,5 @@ int pid_launch(char **_argv, char *args, char **_path)
 		exit(102); }
 	else
 		waitpid(pid, &status, 0);
-	return (WEXITSTATUS(status) & 255);
+	return (WEXITSTATUS(status) & 1024);
 }
