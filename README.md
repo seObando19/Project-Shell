@@ -23,6 +23,39 @@ For more imformation:
 5|[shellfunc2](./shellfunc2.c)|...
 6|[shellfunc3](./shellfunc3.c)|...
 ---
+## Example
+```
+vagrant@vagrant-ubuntu-trusty-64:~/simple_shell$ ./hsh
+$ ls -l
+total 52
+-rw-rw-r-- 1 vagrant vagrant   155 Aug 11 13:47 AUTHORS
+-rw-rw-r-- 1 vagrant vagrant  1891 Aug 17 15:00 README.md
+-rwxrwxr-x 1 vagrant vagrant   837 Aug 18 19:12 holberton.h
+-rwxrwxr-x 1 vagrant vagrant 14151 Aug 19 22:20 hsh
+drwxrwxr-x 2 vagrant vagrant  4096 Aug 11 13:47 images
+-rwxrwxr-x 1 vagrant vagrant  2857 Aug 20 13:38 man_1_simple_shell
+-rwxrwxr-x 1 vagrant vagrant  1926 Aug 20 02:46 shell-main.c
+-rwxrwxr-x 1 vagrant vagrant  3108 Aug 20 01:29 shellfunc1.c
+-rwxrwxr-x 1 vagrant vagrant  1943 Aug 19 18:52 shellfunc2.c
+-rwxrwxr-x 1 vagrant vagrant   818 Aug 16 20:54 shellfunc3.c
+```
+## How to use this repo
+1. Clone the repository
+```
+git clone https://github.com/seObando19/simple_shell.git
+```
+
+2. Execute the command and compiling
+```
+cd simple_shell
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+```
+
+3. Finally, execute anything command
+```
+./hsh
+```
+
 <p align="center">
     <h2 align="center">Made by, Hector Orozco and Sebastian Obando</h2>
       <p align="center">

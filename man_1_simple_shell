@@ -1,5 +1,5 @@
 ./" Manpage for simple_shell
-.TH SIMPLE_SHELL 1 "10 August 2020" "1.0" "Simple Shell Manual Page"
+.TH SIMPLE_SHELL 1 "20 August 2020" "1.0" "Simple Shell Manual Page"
 
 .SH NAME
 
@@ -33,12 +33,34 @@ To exit, enter Ctrl-D or type in exit. Ctrl+C is currently disabled so it won't 
 
 Simple_shell may be ran in non-interactive mode. echo 'pwd' | ./hsh
 
+vagrant@vagrant-ubuntu-trusty-64:~/simple_shell$ ./hsh
+.PP
+$ ls -l
+.PP
+total 52
+.PP
+-rw-rw-r-- 1 vagrant vagrant   155 Aug 11 13:47 AUTHORS
+.PP
+-rw-rw-r-- 1 vagrant vagrant  1891 Aug 17 15:00 README.md
+.PP
+-rwxrwxr-x 1 vagrant vagrant   837 Aug 18 19:12 holberton.h
+.PP
+drwxrwxr-x 2 vagrant vagrant  4096 Aug 11 13:47 images
+.PP
+-rwxrwxr-x 1 vagrant vagrant  2857 Aug 20 13:38 man_1_simple_shell
+.PP
+-rwxrwxr-x 1 vagrant vagrant  1926 Aug 20 02:46 shell-main.c
+.PP
+-rwxrwxr-x 1 vagrant vagrant  3108 Aug 20 01:29 shellfunc1.c
+.PP
+-rwxrwxr-x 1 vagrant vagrant  1943 Aug 19 18:52 shellfunc2.c
+.PP
+-rwxrwxr-x 1 vagrant vagrant   818 Aug 16 20:54 shellfunc3.c
+
 .SH BULTINS
 The following commands are supported:
 
 env - prints the enviornment variables
-
-cd - change the directory to the one you pass after.
 
 exit - quits the program.
 
