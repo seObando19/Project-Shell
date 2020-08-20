@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
-* printenv - print env
+*_printenv - print env
 * @env: pointer contains the list var
 * Return: 0
 */
-int printenv(char **env)
+int _printenv(char **env)
 {
 	int i = 0;
 
