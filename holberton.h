@@ -31,5 +31,5 @@ int args_nval(char **);
 char *getpath(char **);
 char **setpathparams(char *);
 int appenddir(char *);
-int printenv(char **);
+int _printenv(char **);
 #endif
