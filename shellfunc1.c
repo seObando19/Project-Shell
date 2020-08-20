@@ -48,7 +48,7 @@ int get_simple_args(int argc, char **argv, char *args, char **_path, char **ev)
 
 	if (argc == 1)
 	{
-		if ((int)args[0] == 10)
+		if ((int)args[0] == 100)
 			free(args);
 		else
 		{
