@@ -12,7 +12,6 @@ int main(int argc, char **argv, char **env)
 {
 	/** pointer save data input of the terminal client */
 	char *line;
-	/*char *argv2[] = {__FILE__, NULL};*/
 	int _isatty;      /*test whether a file descriptor*/
 	int statusbuffer = 0;
 	int status_pid = 0;
