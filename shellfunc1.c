@@ -65,7 +65,7 @@ int get_simple_args(int argc, char **argv, char *args, char **_path, char **ev)
 				j++; }
 			options[j] = NULL;
 			if (_strcmp(options[0], "env") == 0 && options[1] == NULL)
-				printenv(ev);
+				_printenv(ev);
 			else if (options[0] != NULL && _strlen(options[0]) > 0)
 				status_pid = pid_launch(options, args, _path);
 			free(args);
