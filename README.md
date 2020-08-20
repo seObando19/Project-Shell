@@ -26,6 +26,7 @@ For more imformation:
 ## Example
 ```
 vagrant@vagrant-ubuntu-trusty-64:~/simple_shell$ ./hsh
+$ ls -l
 total 52
 -rw-rw-r-- 1 vagrant vagrant   155 Aug 11 13:47 AUTHORS
 -rw-rw-r-- 1 vagrant vagrant  1891 Aug 17 15:00 README.md
